@@ -46,3 +46,7 @@ export const refreshTokenApi = (data?: object) => {
     data
   });
 };
+
+export const getLogOut = () => {
+  return http.request("post", baseUrlApi("logout"));
+};
